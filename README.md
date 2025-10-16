@@ -12,6 +12,24 @@
 
 </div>
 
+## Latest Update - Added Combinatorics Section! 🎉
+
+We've just added a new **Combinatorics** section with implementations in all supported programming languages:
+- Python
+- C#
+- Java
+- C++
+
+Each implementation includes:
+- Factorial calculations
+- Permutations
+- Combinations
+- Catalan numbers
+
+Try out the new combinatorics functions today!
+
+For more details about the new additions, see [NEW_ADDITIONS.md](NEW_ADDITIONS.md)
+
 <!-- English -->
 <div id="english">
 
