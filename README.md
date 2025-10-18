@@ -12,23 +12,21 @@
 
 </div>
 
-## Latest Update - Added Combinatorics Section! 🎉
+## Latest Update - Added Polynomial Root Finder (Newton-Raphson Method)! 🎉
 
-We've just added a new **Combinatorics** section with implementations in all supported programming languages:
+We've just added a new **Polynomial Root Finder** implementation using the Newton-Raphson method in all supported programming languages:
 - Python
 - C#
 - Java
 - C++
 
 Each implementation includes:
-- Factorial calculations
-- Permutations
-- Combinations
-- Catalan numbers
+- Polynomial evaluation
+- Derivative calculation
+- Newton-Raphson root finding algorithm
+- Multiple root detection
 
-Try out the new combinatorics functions today!
-
-For more details about the new additions, see [NEW_ADDITIONS.md](NEW_ADDITIONS.md)
+Try out the new polynomial root finder today! The implementations are located in the "Other" directory for each language.
 
 <!-- English -->
 <div id="english">
