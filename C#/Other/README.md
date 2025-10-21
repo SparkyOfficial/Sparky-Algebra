@@ -1,65 +1,132 @@
-# Пошук коренів поліномів методом Ньютона-Рафсона (C#)
+# Complex Number Implementation (C#)
 
-Ця програма знаходить корені поліномів за допомогою чисельного методу Ньютона-Рафсона.
+<div align="center">
+  
+[![English](https://img.shields.io/badge/English-blue)](#english)
+[![Українська](https://img.shields.io/badge/Українська-blue)](#українська)
+[![Русский](https://img.shields.io/badge/Русский-blue)](#русский)
+
+</div>
+
+<!-- English -->
+<div id="english">
+
+## Description
+
+This program provides a [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/C%23/Other/ComplexNumber.cs#L7-L212) class for working with complex numbers in C#. It includes all basic arithmetic operations, properties like conjugate, magnitude, and phase, and conversion to/from polar form.
+
+## Features
+
+- Addition, subtraction, multiplication, and division of complex numbers
+- Conjugate, magnitude, and phase calculations
+- Conversion to and from polar form
+- Operator overloading for intuitive usage
+
+## Usage
+
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        // Create complex numbers
+        ComplexNumber z1 = new ComplexNumber(3, 4);   // 3 + 4i
+        ComplexNumber z2 = new ComplexNumber(1, -2);  // 1 - 2i
+
+        // Perform operations
+        ComplexNumber result = z1 + z2;
+        Console.WriteLine(result);  // Output: 4 + 2i
+
+        // Access properties
+        Console.WriteLine(z1.Magnitude());  // Output: 5
+    }
+}
+```
+
+## Author
+
+Andriy Budilnikov (Андрій Будильников)
+
+</div>
+
+<!-- Українська -->
+<div id="українська">
 
 ## Опис
 
-Метод Ньютона-Рафсона — це ітераційний чисельний метод для знаходження коренів функцій. Ця реалізація спеціалізується на пошуку коренів поліномів.
+Ця програма надає клас [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/C%23/Other/ComplexNumber.cs#L7-L212) для роботи з комплексними числами в C#. Вона включає всі базові арифметичні операції, властивості, такі як спряжене, модуль та фаза, а також перетворення в/з полярної форми.
+
+## Особливості
+
+- Додавання, віднімання, множення та ділення комплексних чисел
+- Обчислення спряженого, модуля та фази
+- Перетворення в та з полярної форми
+- Перевантаження операторів для інтуїтивного використання
 
 ## Використання
 
-Для запуску програми виконайте наступну команду:
+```csharp
+using System;
 
-```bash
-dotnet run
+class Program {
+    static void Main() {
+        // Створення комплексних чисел
+        ComplexNumber z1 = new ComplexNumber(3, 4);   // 3 + 4i
+        ComplexNumber z2 = new ComplexNumber(1, -2);  // 1 - 2i
+
+        // Виконання операцій
+        ComplexNumber result = z1 + z2;
+        Console.WriteLine(result);  // Вивід: 4 + 2i
+
+        // Доступ до властивостей
+        Console.WriteLine(z1.Magnitude());  // Вивід: 5
+    }
+}
 ```
-
-Або скомпілюйте та запустіть:
-
-```bash
-dotnet build
-dotnet ./bin/Debug/netX.X/Other.dll
-```
-
-## Приклад
-
-Програма демонструє пошук коренів полінома:
-x³ - 6x² + 11x - 6 = 0
-
-Очікувані корені: 1, 2, 3
-
-## Автор
-
-Андрій Будильников# Пошук коренів поліномів методом Ньютона-Рафсона (C#)
-
-Ця програма знаходить корені поліномів за допомогою чисельного методу Ньютона-Рафсона.
-
-## Опис
-
-Метод Ньютона-Рафсона — це ітераційний чисельний метод для знаходження коренів функцій. Ця реалізація спеціалізується на пошуку коренів поліномів.
-
-## Використання
-
-Для запуску програми виконайте наступну команду:
-
-```bash
-dotnet run
-```
-
-Або скомпілюйте та запустіть:
-
-```bash
-dotnet build
-dotnet ./bin/Debug/netX.X/Other.dll
-```
-
-## Приклад
-
-Програма демонструє пошук коренів полінома:
-x³ - 6x² + 11x - 6 = 0
-
-Очікувані корені: 1, 2, 3
 
 ## Автор
 
 Андрій Будильников
+
+</div>
+
+<!-- Русский -->
+<div id="русский">
+
+## Описание
+
+Эта программа предоставляет класс [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/C%23/Other/ComplexNumber.cs#L7-L212) для работы с комплексными числами в C#. Она включает все базовые арифметические операции, свойства, такие как сопряженное, модуль и фаза, а также преобразование в/из полярной формы.
+
+## Особенности
+
+- Сложение, вычитание, умножение и деление комплексных чисел
+- Вычисление сопряженного, модуля и фазы
+- Преобразование в и из полярной формы
+- Перегрузка операторов для интуитивного использования
+
+## Использование
+
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        // Создание комплексных чисел
+        ComplexNumber z1 = new ComplexNumber(3, 4);   // 3 + 4i
+        ComplexNumber z2 = new ComplexNumber(1, -2);  // 1 - 2i
+
+        // Выполнение операций
+        ComplexNumber result = z1 + z2;
+        Console.WriteLine(result);  // Вывод: 4 + 2i
+
+        // Доступ к свойствам
+        Console.WriteLine(z1.Magnitude());  // Вывод: 5
+    }
+}
+```
+
+## Автор
+
+Андрій Будильников
+
+</div>

@@ -12,21 +12,21 @@
 
 </div>
 
-## Latest Update - Added Polynomial Root Finder (Newton-Raphson Method)! 🎉
+## Latest Update - Added Complex Number Implementation! 🎉
 
-We've just added a new **Polynomial Root Finder** implementation using the Newton-Raphson method in all supported programming languages:
+We've just added a new **Complex Number** implementation in all supported programming languages:
 - Python
 - C#
 - Java
 - C++
 
 Each implementation includes:
-- Polynomial evaluation
-- Derivative calculation
-- Newton-Raphson root finding algorithm
-- Multiple root detection
+- Basic arithmetic operations (addition, subtraction, multiplication, division)
+- Conjugate, magnitude, and phase calculations
+- Conversion to and from polar form
+- Operator overloading where supported
 
-Try out the new polynomial root finder today! The implementations are located in the "Other" directory for each language.
+Try out the new complex number implementation today! The implementations are located in the "Other" directory for each language.
 
 <!-- English -->
 <div id="english">
