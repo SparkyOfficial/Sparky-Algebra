@@ -1,4 +1,4 @@
-# Complex Number Implementation (Python)
+# Other Mathematical Implementations (Python)
 
 <div align="center">
   
@@ -13,17 +13,28 @@
 
 ## Description
 
-This module provides a [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/Python/Other/complex_number.py#L7-L186) class for working with complex numbers in Python. It includes all basic arithmetic operations, properties like conjugate, magnitude, and phase, and conversion to/from polar form.
+This directory contains various mathematical implementations in Python, including:
+
+1. A [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/Python/Other/complex_number.py#L7-L186) class for working with complex numbers
+2. Fast Fourier Transform (FFT) implementation for efficient signal processing and polynomial multiplication
 
 ## Features
 
+### Complex Numbers
 - Addition, subtraction, multiplication, and division of complex numbers
 - Conjugate, magnitude, and phase calculations
 - Conversion to and from polar form
 - Operator overloading for intuitive usage
 
+### Fast Fourier Transform
+- FFT computation for sequences of complex numbers
+- Inverse FFT for signal reconstruction
+- Polynomial multiplication using FFT
+- Automatic zero-padding for non-power-of-2 input sizes
+
 ## Usage
 
+### Complex Numbers
 ```python
 from complex_number import ComplexNumber
 
@@ -37,6 +48,23 @@ print(result)  # Output: 4 + 2i
 
 # Access properties
 print(z1.magnitude())  # Output: 5.0
+```
+
+### Fast Fourier Transform
+```python
+from fft import FFT
+
+# Basic FFT
+x = [1, 2, 3, 4]
+X = FFT.fft(x)
+
+# Inverse FFT
+x_recovered = FFT.ifft(X)
+
+# Polynomial multiplication
+poly1 = [2, 3, 1]  # 2x² + 3x + 1
+poly2 = [1, 2, 4]  # x² + 2x + 4
+result = FFT.polynomial_multiply(poly1, poly2)
 ```
 
 ## Author

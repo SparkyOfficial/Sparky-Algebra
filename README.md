@@ -12,21 +12,24 @@
 
 </div>
 
-## Latest Update - Added Complex Number Implementation! 🎉
+## Latest Update - Added Fast Fourier Transform (FFT) Implementation! 🎉
 
-We've just added a new **Complex Number** implementation in all supported programming languages:
+We've just added a new **Fast Fourier Transform (FFT)** implementation in all supported programming languages:
 - Python
 - C#
 - Java
 - C++
+- Kotlin
 
 Each implementation includes:
-- Basic arithmetic operations (addition, subtraction, multiplication, division)
-- Conjugate, magnitude, and phase calculations
-- Conversion to and from polar form
-- Operator overloading where supported
+- FFT computation for sequences of complex numbers
+- Inverse FFT for signal reconstruction
+- Polynomial multiplication using FFT
+- Automatic zero-padding for non-power-of-2 input sizes
 
-Try out the new complex number implementation today! The implementations are located in the "Other" directory for each language.
+We've also updated our Complex Number implementations with additional features!
+
+Try out the new FFT implementation today! The implementations are located in the "Other" directory for each language.
 
 <!-- English -->
 <div id="english">

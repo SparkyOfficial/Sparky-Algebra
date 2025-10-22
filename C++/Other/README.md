@@ -1,4 +1,4 @@
-# Complex Number Implementation (C++)
+# Other Mathematical Implementations (C++)
 
 <div align="center">
   
@@ -13,17 +13,28 @@
 
 ## Description
 
-This program provides a [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/C%2B%2B/Other/ComplexNumber.cpp#L9-L175) class for working with complex numbers in C++. It includes all basic arithmetic operations, properties like conjugate, magnitude, and phase, and conversion to/from polar form.
+This directory contains various mathematical implementations in C++, including:
+
+1. A [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/C%2B%2B/Other/ComplexNumber.cpp#L9-L175) class for working with complex numbers
+2. Fast Fourier Transform (FFT) implementation for efficient signal processing and polynomial multiplication
 
 ## Features
 
+### Complex Numbers
 - Addition, subtraction, multiplication, and division of complex numbers
 - Conjugate, magnitude, and phase calculations
 - Conversion to and from polar form
 - Operator overloading for intuitive usage
 
+### Fast Fourier Transform
+- FFT computation for sequences of complex numbers
+- Inverse FFT for signal reconstruction
+- Polynomial multiplication using FFT
+- Automatic zero-padding for non-power-of-2 input sizes
+
 ## Usage
 
+### Complex Numbers
 ```cpp
 #include "ComplexNumber.cpp"
 
@@ -41,6 +52,29 @@ int main() {
 
     return 0;
 }
+```
+
+### Fast Fourier Transform
+```cpp
+#include <vector>
+#include <complex>
+
+// Basic FFT
+std::vector<std::complex<double>> x = { 
+    std::complex<double>(1, 0), 
+    std::complex<double>(2, 0), 
+    std::complex<double>(3, 0), 
+    std::complex<double>(4, 0) 
+};
+std::vector<std::complex<double>> X = FFT::computeFFT(x);
+
+// Inverse FFT
+std::vector<std::complex<double>> xRecovered = FFT::computeInverseFFT(X);
+
+// Polynomial multiplication
+std::vector<double> poly1 = { 2, 3, 1 };  // 2x² + 3x + 1
+std::vector<double> poly2 = { 1, 2, 4 };  // x² + 2x + 4
+std::vector<double> result = FFT::polynomialMultiply(poly1, poly2);
 ```
 
 ## Author

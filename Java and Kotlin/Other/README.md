@@ -1,4 +1,4 @@
-# Complex Number Implementation (Java)
+# Other Mathematical Implementations (Java)
 
 <div align="center">
   
@@ -13,17 +13,28 @@
 
 ## Description
 
-This program provides a [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/Java%20and%20Kotlin/Other/ComplexNumber.java#L7-L190) class for working with complex numbers in Java. It includes all basic arithmetic operations, properties like conjugate, magnitude, and phase, and conversion to/from polar form.
+This directory contains various mathematical implementations in Java, including:
+
+1. A [ComplexNumber](file:///c%3A/Users/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD/Desktop/Sbornik-Algebra-Sparky/Java%20and%20Kotlin/Other/ComplexNumber.java#L7-L190) class for working with complex numbers
+2. Fast Fourier Transform (FFT) implementation for efficient signal processing and polynomial multiplication
 
 ## Features
 
+### Complex Numbers
 - Addition, subtraction, multiplication, and division of complex numbers
 - Conjugate, magnitude, and phase calculations
 - Conversion to and from polar form
 - Method-based operations (since Java doesn't support operator overloading)
 
+### Fast Fourier Transform
+- FFT computation for sequences of complex numbers
+- Inverse FFT for signal reconstruction
+- Polynomial multiplication using FFT
+- Automatic zero-padding for non-power-of-2 input sizes
+
 ## Usage
 
+### Complex Numbers
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -39,6 +50,26 @@ public class Main {
         System.out.println(z1.magnitude());  // Output: 5.0
     }
 }
+```
+
+### Fast Fourier Transform
+```java
+// Basic FFT
+FFT.Complex[] x = { 
+    new FFT.Complex(1, 0), 
+    new FFT.Complex(2, 0), 
+    new FFT.Complex(3, 0), 
+    new FFT.Complex(4, 0) 
+};
+FFT.Complex[] X = FFT.computeFFT(x);
+
+// Inverse FFT
+FFT.Complex[] xRecovered = FFT.computeInverseFFT(X);
+
+// Polynomial multiplication
+double[] poly1 = { 2, 3, 1 };  // 2x² + 3x + 1
+double[] poly2 = { 1, 2, 4 };  // x² + 2x + 4
+double[] result = FFT.polynomialMultiply(poly1, poly2);
 ```
 
 ## Author
